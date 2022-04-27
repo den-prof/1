@@ -796,6 +796,7 @@ html {
 .menu {
   padding-top: 100px;
   position: relative;
+  overflow: hidden;
 }
 
 .menu-fon {
