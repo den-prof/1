@@ -992,10 +992,11 @@ html {
 }
 
 .footer .header__button {
-  max-width: 269px;
+  min-width: 275px;
   max-height: 72px;
   margin-right: auto;
   margin-left: auto;
+  margin-top: -40px;
 }
 
 .footer-list {
@@ -1042,10 +1043,15 @@ html {
 }
 
 .footer-body {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .block-3__columns {
@@ -1704,6 +1710,10 @@ iframe {
   }
 }
 @media (max-width: 1180px) {
+  .footer .header__button {
+    margin-left: -50px;
+  }
+
   .block-1_3__sub-textarea-2 {
     font-size: 18px;
     line-height: 22px;
@@ -1904,6 +1914,17 @@ iframe {
   }
 }
 @media (max-width: 950px) {
+  .footer .header__button {
+    margin: 0 auto;
+  }
+
+  .footer-body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
   .burger-button {
     margin: 0 35% -1070px auto;
   }
@@ -2424,6 +2445,10 @@ iframe {
   }
 }
 @media (max-width: 540px) {
+  .footer .header__button {
+    min-width: 180px;
+  }
+
   #btn {
     margin-left: -60px;
     min-width: 200px;
