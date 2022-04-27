@@ -342,6 +342,11 @@ html {
   line-height: 28px;
   padding-bottom: 48px;
 }
+.logo {
+	min-width: 220px
+	max-width: 220px
+	height: 71px
+}
 
 /**/
 .block-1 {
@@ -2369,6 +2374,11 @@ iframe {
   }
 }
 @media (max-width: 650px) {
+  .logo {
+		min-width: 180px
+		max-width: 180px
+		height: 51px
+  }
   .block-1_3__sub-textarea-2 {
     height: 156px;
   }
