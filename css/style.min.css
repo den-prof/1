@@ -714,7 +714,9 @@ html {
   padding-right: 45px;
   max-height: 80px;
 }
-
+.strel.strel-2 {
+    right: 0px;
+}
 .block-2-ickon-2 {
   padding-right: 45px;
   max-height: 62px;
