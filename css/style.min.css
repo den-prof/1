@@ -223,6 +223,18 @@ html {
   background: #FFEFB8;
 }
 
+.logo {
+  min-width: 220px;
+  max-width: 220px;
+  height: 71px;
+}
+
+.header-logo {
+  min-width: 220px;
+  max-width: 220px;
+  height: 71px;
+}
+
 /**/
 .header__content {
   color: #F9F9F9;
@@ -341,11 +353,6 @@ html {
   font-size: 24px;
   line-height: 28px;
   padding-bottom: 48px;
-}
-.logo {
-	min-width: 220px
-	max-width: 220px
-	height: 71px
 }
 
 /**/
@@ -772,6 +779,7 @@ html {
   margin-top: 5px;
   width: 20px;
   height: 20px;
+  background-color: #f9f9f9;
 }
 
 .block-3-box {
@@ -801,7 +809,6 @@ html {
 .menu {
   padding-top: 100px;
   position: relative;
-  overflow: hidden;
 }
 
 .menu-fon {
@@ -1764,7 +1771,7 @@ iframe {
     top: 0;
     left: 0;
     width: 100%;
-    height: 850px;
+    min-height: 850px;
     background-color: #fff;
     z-index: 33;
   }
@@ -1775,14 +1782,20 @@ iframe {
     transition: 0.3s;
     opacity: 0;
     visibility: hidden;
-    position: absolute;
-    position: absolute;
     bottom: 70px;
-    left: 0;
-    right: 0;
     margin: auto;
-    z-index: 34;
-    max-width: 269px;
+    z-index: 3499;
+    min-width: 269px;
+    margin: 0 38% -1070px auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .header__button {
+    z-index: 3499;
+    display: block;
+    opacity: 1;
   }
 
   .burger-box.burger-active {
@@ -1891,6 +1904,10 @@ iframe {
   }
 }
 @media (max-width: 950px) {
+  .burger-button {
+    margin: 0 35% -1070px auto;
+  }
+
   .header__content-2-box {
     text-align: center;
   }
@@ -2015,6 +2032,10 @@ iframe {
   }
 }
 @media (max-width: 800px) {
+  .burger-button {
+    margin: 0 32% -1070px auto;
+  }
+
   .block-1_5 .block-1_3__sub-column-1 {
     padding-bottom: 90px;
   }
@@ -2374,11 +2395,16 @@ iframe {
   }
 }
 @media (max-width: 650px) {
-  .logo {
-		min-width: 180px
-		max-width: 180px
-		height: 51px
+  .burger-button {
+    margin: 0 100% -1070px 0;
   }
+
+  .logo {
+    min-width: 180px;
+    max-width: 180px;
+    height: 51px;
+  }
+
   .block-1_3__sub-textarea-2 {
     height: 156px;
   }
@@ -2398,6 +2424,11 @@ iframe {
   }
 }
 @media (max-width: 540px) {
+  #btn {
+    margin-left: -60px;
+    min-width: 200px;
+  }
+
   .man-tolk-img {
     margin-bottom: 16px;
   }
@@ -2838,12 +2869,19 @@ iframe {
 
   .header__button.burger-button {
     font-size: 14px;
+    min-width: 180px;
+    max-width: 180px;
   }
 }
 @media (max-width: 480px) {
+  #btn {
+    margin-left: -105px;
+  }
+
   .strel.strel-2 {
     right: 0px;
   }
+
   iframe {
     height: 130px;
   }
@@ -2874,6 +2912,19 @@ iframe {
   .header__content-column-img {
     width: 27px;
     height: 30px;
+  }
+}
+@media (max-width: 420px) {
+  #btn {
+    margin-left: -135px;
+  }
+
+  .burger-button {
+    margin: 0 26% -1070px auto;
+  }
+
+  .header__content-column-1 {
+    min-width: 300px;
   }
 }
 /*# sourceMappingURL=../maps/style.min.css.map */
