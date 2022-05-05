@@ -148,14 +148,6 @@ li {
   list-style: none;
 }
 
-.header {
-  background-image: url("../images/Rectangle header.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: left top;
-  overflow: hidden;
-}
-
 html {
   overflow-x: hidden;
 }
@@ -188,10 +180,7 @@ html {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-#block-2_box {
-  max-width: 700px;
-  margin-right: auto;
-}
+
 .burger-box {
   width: 560px;
 }
@@ -245,6 +234,7 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  padding-top: 140px;
 }
 
 .header__content-columns {
@@ -358,6 +348,13 @@ html {
   padding-bottom: 48px;
 }
 
+#header {
+  position: fixed;
+  background-color: #F9F9F9;
+  width: 100%;
+  z-index: 9999999;
+}
+
 /**/
 .block-1 {
   padding: 80px 0 0px 0;
@@ -428,10 +425,6 @@ html {
 
 .block-1__column .text {
   text-align: left;
-  max-width: 278px
-}
-.number-text {
-  margin-left: 20px;
 }
 
 .column-title {
@@ -1520,6 +1513,35 @@ iframe {
   height: 296px;
 }
 
+/*-==-==-=-=-=-=-=-=-=-==-=*/
+.page-wrapper {
+  max-width: 1375px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.last-page .text {
+  padding-bottom: 40px;
+}
+
+.last-page .title {
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+.menu-text_new {
+  padding-bottom: 40px;
+}
+
+.last-page {
+  margin: 80px 0 0 0;
+}
+
+.last-page-br {
+  padding-bottom: 60px;
+}
+
 @media (max-width: 1710px) {
   .block-2__column {
     padding-right: 0;
@@ -1537,6 +1559,10 @@ iframe {
   }
 }
 @media (max-width: 1600px) {
+  .header__content {
+    padding-top: 110px;
+  }
+
   .header__logo {
     padding-right: 340px;
   }
@@ -1626,6 +1652,10 @@ iframe {
   }
 }
 @media (max-width: 1300px) {
+  .header__content {
+    padding-top: 90px;
+  }
+
   .block-3__columns {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -2070,6 +2100,23 @@ iframe {
   }
 }
 @media (max-width: 800px) {
+  .last-page .text {
+    padding-bottom: 22px;
+  }
+
+  .last-page .title {
+    padding-bottom: 22px;
+    padding-top: 22px;
+  }
+
+  .last-page {
+    margin: 50px 0 0 0;
+  }
+
+  .last-page-br {
+    padding-bottom: 30px;
+  }
+
   .burger-button {
     margin: 0 32% -1070px auto;
   }
@@ -2462,6 +2509,23 @@ iframe {
   }
 }
 @media (max-width: 540px) {
+  .last-page .text {
+    padding-bottom: 16px;
+  }
+
+  .last-page .title {
+    padding-bottom: 16px;
+    padding-top: 16px;
+  }
+
+  .last-page {
+    margin: 32px 0 0 0;
+  }
+
+  .last-page-br {
+    padding-bottom: 0px;
+  }
+
   .footer .header__button {
     min-width: 180px;
   }
